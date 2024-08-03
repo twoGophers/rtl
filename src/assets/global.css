@@ -1,0 +1,18 @@
+.border {
+    outline: 1px solid #4D4D4D;
+    border-radius: 12px;
+}
+
+.backgorund-block {
+    background-color: #262626;
+}
+
+.line-gradients {
+    background: linear-gradient(
+        to left,       
+        #3C3C3C 0%,      
+        #444444 50%,      
+        #333333 100%      
+    );
+    border-radius: 8px;
+}
