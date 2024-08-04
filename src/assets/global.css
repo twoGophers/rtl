@@ -3,10 +3,6 @@
     border-radius: 12px;
 }
 
-.backgorund-block {
-    background-color: #262626;
-}
-
 .line-gradients {
     background: linear-gradient(
         to left,       
@@ -26,4 +22,19 @@ input::-webkit-inner-spin-button {
 input:focus {
     border: none;
     outline: none;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.bg-black {
+    background: #262626;
+}
+
+.text-black {
+    color: #000;
+}
+.text-white {
+    color: #fff;
 }

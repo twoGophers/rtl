@@ -28,7 +28,6 @@ export default {
     margin: 0px;
     padding: 0px;
     width: 100%;
-    background: #1D1D1D;
     display: flex;
     justify-content: center; 
   }

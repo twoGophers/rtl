@@ -1,5 +1,5 @@
 <template>
-    <div class="skeleton border backgorund-block">
+    <div class="skeleton border" :class="{ 'bg-black': !isChecked }">
         <div class="skeleton-img"></div>
         <div class="skeleton-title skeleton-box line-gradients"></div>
         <div class="skeleton-content">
@@ -12,6 +12,22 @@
         <div class="skeleton-btn line-gradients"></div>
     </div>
 </template>
+
+<script>
+import { useToggleStore } from '../../../stores/toggleStore';
+import { computed } from 'vue';
+
+export default {
+    setup() {
+        const toggleStore = useToggleStore();
+        const isChecked = computed(() => toggleStore.isChecked);
+
+        return {
+            isChecked
+        }
+    }
+}
+</script>
 
 <style scoped>
     .skeleton {
